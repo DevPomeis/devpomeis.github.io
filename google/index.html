@@ -56,9 +56,9 @@
     <script>
       function focused() {document.getElementById('search').style.boxShadow = "0 0 10px #d3d3d3"};
       function blurred() {document.getElementById('search').style.boxShadow = "none"};
-      function sg(){window.location.replace('https://www.google.com/search?q=' + document.getElementById('search-input').value)};
+      function sg(){window.location.href = 'https://www.google.com/search?q=' + document.getElementById('search-input').value };
 
-      function ilucky(){window.location.replace('https://www.google.com/search?btnI=1&q=' + document.getElementById('search-input').value)};
+      function ilucky(){window.location.href = 'https://www.google.com/search?btnI=1&q=' + document.getElementById('search-input').value } ;
 
       function test(event){
         var x = event.which || event.keyCode;
