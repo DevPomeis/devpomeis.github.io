@@ -3,6 +3,7 @@ html{
     font-size: 13px;
     font-family: Arial,  sans-serif;
     height:100vh;
+    width: 100vw;
 }
 
 *{
@@ -12,9 +13,7 @@ html{
 
 body{
     height: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 100%
 }
 
 a{
@@ -73,7 +72,9 @@ a{
     width: 138px;
 }
 /* Main */
-
+main{
+    width: 100vw;
+}
 main img{
     justify-self: flex-start;
     width:272px;
@@ -112,10 +113,12 @@ main img{
 
 #container{
     display: flex;
+    clear:both;
+    position: relative;
+    top:17.25vh;
     flex-direction: column;
     align-items: center;
     height:226px;
-    margin-bottom:18%;
 }   
 #search{
     position: relative;
@@ -156,7 +159,11 @@ input:focus + #search svg{
 }
 
 /* Footer */
-
+footer{
+    position:fixed;
+    bottom:0;
+    width: 100%;
+}
 #bot{
     justify-content: space-between;
     flex-wrap: wrap;
