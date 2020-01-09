@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="ressources/style.css" type="text/css">
     <link rel="shortcut icon" type="image/x-icon" href="ressources/favicon.ico" />
   </head>
-  <body>
+  <body onkeypress="test(event)">
     <header>
       <div id="top">
         <div id="topb">
@@ -25,11 +25,11 @@
         <div id="search" title="Rechercher">
           <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
           </svg>
-          <input onfocus="focused()" onblur="blurred()" type="text">
+          <input id ="search-input" onfocus="focused()" onblur="blurred()" type="text">
         </div>
         <div id="search-buttons">
-          <a href="">Recherche Google</a>
-          <a href="">J'ai de la chance</a>
+          <a id ="searchbtn" href="javascript:;" onclick="sg()">Recherche Google</a>
+          <a href="javascript:;" onclick="ilucky()">J'ai de la chance</a>
         </div>
       </div>
     </main>
@@ -56,6 +56,16 @@
     <script>
       function focused() {document.getElementById('search').style.boxShadow = "0 0 10px #d3d3d3"};
       function blurred() {document.getElementById('search').style.boxShadow = "none"};
+      function sg(){window.location.replace('https://www.google.com/search?q=' + document.getElementById('search-input').value)};
+
+      function ilucky(){window.location.replace('https://www.google.com/search?btnI=1&q=' + document.getElementById('search-input').value)};
+
+      function test(event){
+        var x = event.which || event.keyCode;
+        if(x===13 && document.getElementById('search-input').value != ""){
+          sg();
+        }
+      }
     </script>
   </body>
 </html>
