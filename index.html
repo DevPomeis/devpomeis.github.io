@@ -1,14 +1,152 @@
-<!DOCTYPE html>
-<html>
+<!-- ******************************************
+*  Author : DevPomeis - Théo POMIES   
+*  Created On : 
+*  File : 
+******************************************* -->
+
+<!doctype html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8"/>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://kit.fontawesome.com/c2d2bca1fb.js" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="ressources/bootstrap.min.css">
+		<link rel="stylesheet" href="ressources/style.css">
 		<title>DevPomeis</title>
 	</head>
 	<body>
-		<h1>Futur portfolio de DevPomeis oui encore</h1>
-
-		<a href="./google/index.html"><h3>Google codé seul</h3></a>
-		<a href="./thesurfingproject/index.html"><h3>The Surfing Project</h3></a>
-		<a href="https://github.com/DevPomeis/thp-session11"><h3>Le repo GitHub de ces projets</h3></a>
+		<div>
+			<video class="min-vh-100 min-vw-100" autoplay muted>
+				<source src="ressources/bgvid.mp4" type="video/mp4">
+			</video>
+			<div class="card-img-overlay h-100 filtre fixed">
+				<!-- Coucou ceux qui regarderont sur GitHub, hesitez pas à envoyer un message sur Slack si vous avez des questions ou améliorations -->
+				<nav class="navbar navbar-expand-lg navbar-dark fixed ml-md-5">
+					<a class="navbar-brand" href="#top">DevPomeis</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link" href="#top" >Accueil <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#journal">Journal de bord</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about-me">About Me</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Projets
+								</a>
+								<div class="dropdown-menu bg-none border-none" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item text-white-50" href="google/index.html">Google</a>
+									<a class="dropdown-item text-white-50" href="thesurfingproject/index.html">The Surfing Project</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div id="top" class="container h-100v d-flex justify-content-center">
+					<h1  class="text-light text-center align-self-center">Bienvenue sur mon journal THP</h1>
+				</div>
+				<div class="container h-50">
+				</div>
+				<div id="journal" class="container h-100v d-flex flex-column justify-content-around align-items-center text-light fa-2x">
+					<h2   class="text-light text-center align-self-center squared-title">Le journal</h2>
+					<div class="card text-center bg-none border-none">
+						<div class="card-header bg-none border-none">
+							Jour 2 
+						</div>
+						<div class="card-footer bg-none border-none">
+							Mardi 7/1/20
+						</div>
+						<div class="card-body">
+							<h4 class="card-title m-md-3 ">Projet : Google</h4>
+							<p class="card-text m-md-5">L'objectif: reproduire la page de recherche de Google après avoir appris HTML/CSS et plus particulièrement FlexBox.</p>
+							<p class="card-text ">Perfectionniste, j'ai reussi à tricher sur la fonction recherche, la majorité des boutons fonctionnent cependant le site n'est pas responsive.</p>
+							<a href="google/index.html" class="btn btn-primary pl-5 pr-5">Google</a>
+						</div>
+					</div>
+				</div>
+				<div class="container h-10"></div>
+				<div class="container min-h-100 d-flex flex-column justify-content-around align-items-center text-light fa-2x">
+					<div class="card text-center bg-none border-none">
+						<div class="card-header bg-none border-none">
+							Jour 4 
+						</div>
+						<div class="card-footer bg-none border-none">
+							Jeudi 9/1/20
+						</div>
+						<div class="card-body">
+							<h4 class="card-title m-md-3 ">Projet : The Surfing Project</h4>
+							<p class="card-text m-md-5">L'objectif: reproduire à l'identique (ou presque) une page du Surfing Project fournie en photo, en Bootstrap pur avec le moins de css ajouté. Elle devait aussi être responsive (Maman: Responsive = qui s'adapte au format de l'ecran, donc compatible avec ton téléphone ;)</p>
+							<p class="card-text ">Je suis plutôt fier du resultat et je dois remercier Greg pour l'idée du Card Deck et Jade pour les fautes d'orthographe.</p>
+							<a href="thesurfingproject/index.html" class="btn btn-primary pl-5 pr-5">The Surfing Project</a>
+						</div>
+					</div>
+				</div>
+				<div class="container h-10"></div>
+				<div class="container min-h-100 d-flex flex-column justify-content-around align-items-center text-light fa-2x">
+					<div class="card text-center bg-none border-none">
+						<div class="card-header bg-none border-none">
+							Jour 5 
+						</div>
+						<div class="card-footer bg-none border-none">
+							Vendredi 10/1/20
+						</div>
+						<div class="card-body">
+							<h4 class="card-title m-md-3 ">Projet : Landing Page</h4>
+							<p class="card-text m-md-5">L'objectif: designer, coder, puis mettre en production une landing page.</p>
+							<p class="card-text ">Pour cette page, je devais choisir une organisation concrète sur laquelle travailler. Cela devait permettre de mieux me projeter et de proposer un meilleur rendu... J'ai donc choisi: Moi. L'organisation que je préfère. /s</p>
+							<a href="#top" class="btn btn-primary pl-5 pr-5">Le site actuel</a>
+						</div>
+					</div>
+				</div>
+				<div class="container h-50">
+				</div>
+				<div id="about-me" class="container h-100v d-flex flex-column justify-content-around align-items-center text-light fa-2x">
+					<h2   class="m-md-5 text-light text-center align-self-center squared-title">About Me</h2>
+					<div class="card text-center bg-none border-none">
+						<div class="card-header bg-none border-none">
+							Nom : Théo POMIES
+						</div>
+						<div class="card-footer bg-none border-none">
+							Age : 19 ans
+						</div>
+						<div class="card-body">
+							<h4 class="card-title m-md-3">Formation: BAC S / College Dropout</h4>
+							<p class="card-text mt-md-5">Salut toi!<br> Moi c'est Théo, je crée cette page pour voir si je suis capable de faire sortir les idées de ma tête et les afficher sur ton ordinateur.</p>
+							<p class="card-text mb-md-5">Je suis actuellement en train de me former avec <a class="text-my" href="thehackingproject.org">THP</a> au developpement en peer-learning, l'aventure va durer 12 semaines (normalement) et sur ce site tu pourras suivre ma progression! </p>
+						</div>
+					</div>
+				</div>
+				<div class="container h-25"></div>
+				<div class="container">
+					<p class="text-light"><small>&copyTheo POMIES - Mes réseaux : <a class="text-my" href="https://github.com/DevPomeis">DevPomeis <i class="fab fa-github"></i></a>  <a class="text-my" href="https://www.instagram.com/theokaybiatch/?hl=fr"><i class="fab fa-instagram"></i></a></small>  <a class="text-my" href="https://www.instagram.com/theokaybiatch/?hl=fr"><i class="fab fa-facebook"></i></a></small></p>
+				</div>
+			</div>
+		</div>
+		<!-- Optional JavaScript -->
+		<script>
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    	anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    	});
+		});
+		</script>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body>
 </html>

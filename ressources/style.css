@@ -1,0 +1,65 @@
+video {
+  height:100%;
+   position: fixed;
+}
+
+.filtre{
+  background-color:rgba(0,0,0,0.5);
+}
+
+.fixed{
+  position:fixed;
+}
+
+.card-img-overlay{
+  overflow: scroll;
+}
+
+.bg-none{
+  background: none;
+}
+
+.border-none{
+  border: none;
+}
+
+.squared-title{
+  border: 2px solid white;
+  padding: 0.3em;
+}
+
+.dropdown-item:hover{
+  background-color: rgba(0,0,0,0.5);
+  color: white !important;
+}
+
+.text-my{
+  color: white !important;
+}
+
+.m-3{
+  margin-top: 10vh !important;
+}
+
+.m-5{
+  margin-top: 20vh !important;
+}
+
+.h-100v{
+  min-height:100vh !important;
+}
+
+.h-50{
+  min-height: 50vh !important;
+}
+
+.h-25{
+  min-height: 25vh !important;
+}
+
+.h-10{
+  min-height: 10vh !important;
+}
+.navbar{
+  z-index: 1;
+}
