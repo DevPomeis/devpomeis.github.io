@@ -1,18 +1,23 @@
-video {
-  height:100%;
-   position: fixed;
+@media (min-aspect-ratio: 16/9){
+  video{
+    width:100%;
+  }
 }
+
+@media (max-aspect-ratio: 16/9){
+  video{
+    height:100%;
+  }
+}
+
 
 .filtre{
   background-color:rgba(0,0,0,0.5);
 }
 
-.fixed{
-  position:fixed;
-}
-
 .card-img-overlay{
-  overflow: scroll;
+  overflow: auto;
+  padding-bottom:0;
 }
 
 .bg-none{
@@ -37,29 +42,32 @@ video {
   color: white !important;
 }
 
-.m-3{
-  margin-top: 10vh !important;
+main{
+  overflow-y: scroll !important;
+  height: 100%;
 }
 
-.m-5{
-  margin-top: 20vh !important;
+.vh-80{
+  height: 80vh;
 }
 
-.h-100v{
-  min-height:100vh !important;
+.first-cat-row{
+  margin-top:30vh !important;
 }
 
-.h-50{
-  min-height: 50vh !important;
+.cat-row{
+  margin-top:50vh !important;
 }
 
-.h-25{
-  min-height: 25vh !important;
+.my-row{
+  margin-top:20vh !important;
+  font-size:1.2rem !important;
 }
 
-.h-10{
-  min-height: 10vh !important;
+.end-row{
+  margin-bottom: 20vh !important;
 }
-.navbar{
-  z-index: 1;
+
+.text-my{
+  color: white !important;
 }
