@@ -45,7 +45,15 @@
 main{
   overflow-y: scroll !important;
   height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  
 }
+
+::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; 
+  }
 
 .vh-80{
   height: 80vh;
