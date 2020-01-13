@@ -6,3 +6,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
+const easter = document.getElementById('easteregg');
+
+easter.addEventListener("click", () => {alert("Tu as trouvé l'alerte secrete, felicitation.")})
